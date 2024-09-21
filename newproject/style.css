@@ -4,27 +4,55 @@
   box-sizing: border-box;
 }
 
+
+.site-header {
+  background-color: #ffdd33; /* Yellow bar */
+    color: black;
+    text-align: center;
+    padding: 20px;
+    font-weight: bold;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+ 
+}
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   font-family: Arial, sans-serif;
 }
 
-header {
+.header {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #f0f8ff;
-  padding: 10px;
-  border-bottom: 2px solid #0c0202;
-
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 10px;
+    border-bottom: 2px solid #ccc;
+    margin-top: 20px; /* Adds space for the fixed yellow bar */
+    position: fixed;
+    top: 40px; /* Starts just below the yellow bar */
+    left: 0;
+    width: 100%;
+    z-index: 999;
 }
 
-.logo-section {
+.logo-container {
   display: flex;
   align-items: center;
 }
 
 .logo {
-  width: 100px;
+  width: 80px;
   margin-right: 15px;
 }
 
@@ -38,21 +66,22 @@ header {
   color: #666;
 }
 
-nav ul {
+.nav ul {
   list-style: none;
   display: flex;
   gap: 20px;
 }
 
-nav ul li a {
+.nav a {
   text-decoration: none;
-  color: #000;
-  font-weight: bold;
+  color: black;
+  font-size: 0.95em;
 }
 
-nav ul li a:hover {
-  color: #007BFF;
+.nav a:hover {
+  color: #007bff;
 }
+
 
   /* Add padding to body to avoid content being hidden behind the navbar */
  

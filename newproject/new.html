@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /* Color Variables */
+:root {
+    --primary: #f7fafc; /* Dark gray for sidebar background */
+    --primary-foreground:#1a202c; /* White for text on dark background */
+    --background:#1a202c; /* Light background for content */
+}
+
+
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Flexbox Layout */
+.flex {
+    display: flex;
+    align-items: stretch;
+}
+
+.h-screen {
+    height: 100vh; /* Full screen height */
+}
+
+/* Sidebar */
+.bg-primary {
+    background-color: var(--primary);
+    color: var(--primary-foreground);
+}
+
+.w-1/4 {
+    width: 25%;
+}
+
+.p-4 {
+    padding: 1rem;
+}
+
+.text-lg {
+    font-size: 1.125rem; /* Large text */
+}
+
+.font-semibold {
+    font-weight: 600;
+}
+
+.mb-4 {
+    margin-bottom: 1rem;
+}
+
+/* List items */
+ul {
+    list-style-type: none; /* Remove default bullet points */
+}
+
+li {
+    padding: 0.5rem 0; /* Vertical padding for list items */
+    cursor: pointer;
+}
+
+li:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Lighten background on hover */
+}
+
+/* Main Content */
+.flex-1 {
+    flex-grow: 1;
+}
+
+.bg-background {
+    background-color: var(--background);
+}
+
+.text-2xl {
+    font-size: 1.5rem; /* Extra large text */
+}
+
+.text-primary-foreground {
+    color: var(--primary-foreground);
+}
+
+p {
+    line-height: 1.6;
+    color: #2d3748; /* Darker text for readability on light background */
+}
+#section
+{
+    background-color: #f7fafc;
+}
+
+</style>
+<body>
+    <div class="flex h-screen">
+    
+    <div class="bg-primary w-1/4 p-4">
+        <h2 class="text-primary-foreground text-lg font-semibold mb-4">Menu</h2>
+        <ul>
+            <li class="py-2">Home</li>
+            <li class="py-2">About</li>
+            <li class="py-2">Services</li>
+            <li class="py-2">Contact</li>
+        </ul>
+    </div>
+    
+    <div class="flex-1 bg-background p-4">
+        <h1 class="text-primary-foreground text-2xl font-semibold mb-4">Welcome to Our Website</h1>
+        <p class="text-primary-foreground">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat, vestibulum lectus sit amet, posuere est. Sed auctor nunc id nisi convallis, sed rutrum odio placerat.</p>
+    </div>
+</div>
+<section id="contact">
+    <div>
+      <h2>Contact Us</h2>
+      <p>If you have any questions, feel free to reach out to us!</p>
+    </div>
+  </section>
+  <section id="contact">
+    <div>
+      <h2>Contact Us</h2>
+      <p>If you have any questions, feel free to reach out to us!</p>
+    </div>
+  </section>
+  </body>
+</html>
+</body>
+</html>

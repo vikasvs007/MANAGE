@@ -1,49 +1,74 @@
+/* General Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-
+/* Top Bar Styling */
 .site-header {
-  background-color: #ffdd33; /* Yellow bar */
-    color: black;
-    text-align: center;
-    padding: 20px;
-    font-weight: bold;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1000;
- 
+  background-color: yellow;
+  color: black;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  border-bottom: 2px solid black;
 }
 
+.contact-info {
+  display: flex;
+  gap: 20px;
+}
 
+.contact-info span {
+  display: flex;
+  align-items: center;
+}
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+.contact-info a {
+  color: black;
+  text-decoration: none;
+}
+.social-icons a {
+  color: #555; /* Default color */
+  margin-right: 15px; /* Space between icons */
+  font-size: 40px;
+  text-decoration: none;
+  size: 10%;
+}
+
+.social-icons a:hover {
+  color: #007bff; /* Hover color */
+}
+
+i {
+  margin-right: 8px;
 }
 
 body {
   font-family: Arial, sans-serif;
+  margin-top: 60px; /* To ensure content doesn't get overlapped by fixed top bar */
 }
 
+/* Header Styling */
 .header {
   display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: white;
-    padding: 10px;
-    border-bottom: 2px solid #ccc;
-    margin-top: 20px; /* Adds space for the fixed yellow bar */
-    position: fixed;
-    top: 40px; /* Starts just below the yellow bar */
-    left: 0;
-    width: 100%;
-    z-index: 999;
+  justify-content: space-between;
+  align-items: center;
+  background-color:antiquewhite;
+  padding: 10px;
+  border-bottom: 2px solid #ccc;
+  position: fixed;
+  top: 35px; /* Adjusted for top-bar */
+  left: 0;
+  width: 100%;
+  z-index: 999;
 }
 
 .logo-container {
@@ -66,6 +91,7 @@ body {
   color: #666;
 }
 
+/* Navigation Menu */
 .nav ul {
   list-style: none;
   display: flex;
@@ -82,63 +108,211 @@ body {
   color: #007bff;
 }
 
+/* Hero Section */
+section {
+  height: 100vh;
+  padding: 60px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  opacity: 1.5;
+}
 
-  /* Add padding to body to avoid content being hidden behind the navbar */
- 
+#home  {
+  background-size: cover ;
+  margin-top: 100px;
   
-  /* Section Styles */
-  section {
-    height: 100vh;
-    padding: 60px 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  /* Hero Section */
-  #home {
-    background-image: url(c63704e7-0906-4030-ba19-7f01ea44ee7f.jpg); /* Replace with your image URL */
-    background-size: cover;
-    background-position: center;
-    color: white;
-    text-align: center;
-  }
-  #home h1 {
-    font-size: 50px;
-  }
-  #home p {
-    font-size: 24px;
-  }
-#about
+}
+
+#home p {
+  font-size: 24px;
+}
+
+.heloo
 {
-  background-image: url(c63704e7-0906-4030-ba19-7f01ea44ee7f.jpg); /* Replace with your image URL */
+  color: black;
+  opacity: 1.00;
+  background-color: white;
+  padding: 50px; ;
+}
+.heloo p{
+  font-size: 25px;
+}
+
+.video-wrap {
+  z-index: -100;
+  background-size: cover;
+}
+
+.custom-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+
+/* About Section */
+#about {
+  background-image: url('c63704e7-0906-4030-ba19-7f01ea44ee7f.jpg');
   background-size: cover;
   background-position: center;
   color: white;
   text-align: center;
+  padding: 80px 20px;
 }
-#services
-{
-  background-color: #dcdfe1;
-}
-#services h2 {
-  text-align: left;
+
+/* Services Section */
+#services {
+  background-image: url(HHS_0330.JPG);
+  padding: 60px 20px;
+  background-size: cover;
 
 }
-.servicessection1
-{
-  padding: 50px 20px 50px 20px;
-  
+
+#services h2 {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.services-section {
+  padding: 50px 20px;
+  margin-bottom: 20px;
+}
+
+.servicessection1 {
   background-color: #2169a9;
-  align-items: center;
-  margin-left: 0;
   color: aliceblue;
 }
-.servicessection2
-{
-  padding:30px 20px ;
+
+.servicessection2 {
   background-color: #1a71bd;
-  align-items: center;
-  margin-left: 2px;
   color: #dcdfe1;
+}
+
+/* Contact Section */
+#contact {
+  background-color: black;
+  text-align: center;
+  color: aliceblue;
+  padding: 60px 20px;
+}
+
+/* Footer styles */
+footer {
+  background-color:#636395;
+  color: #e6e6e6;
+  padding: 40px 0;
+  text-align: left;
+  font-family: Arial, sans-serif;
+  font-size: 15px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0 10%;
+}
+
+.footer-about,
+.footer-links,
+.footer-contact,
+.footer-social {
+  flex: 1;
+  margin: 10px;
+}
+
+.footer-about h3,
+.footer-links h3,
+.footer-contact h3,
+.footer-social h3 {
+  margin-bottom: 10px;
+  color:black;
+}
+
+.footer-about p,
+.footer-contact p,
+.footer-links ul,
+.footer-links li,
+.footer-links a,
+.footer-social a {
+  color:black;
+  font-size: 14px;
+}
+
+.footer-links ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin-bottom: 8px;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color:black;
+}
+
+.footer-links a:hover {
+  color: blue;
+}
+
+.footer-contact a {
+  text-decoration: none;
+  
+}
+
+.footer-contact a:hover {
+  color: #f76b1c;
+}
+
+/* Social Icons */
+.social-icons a {
+  font-size: 20px;
+  color: #e6e6e6;
+  margin-right: 15px;
+  text-decoration: none;
+}
+
+.social-icons a:hover {
+  color: black;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding: 10px ;
+  
+  color: black;
+  margin-top: 20px;
+  font-size: 14px;
+  opacity: 1;
+}
+
+.footer-bottom a {
+  color:white;
+  text-decoration: none;
+}
+
+.footer-bottom a:hover {
+  color:blue;
+}
+
+/* Responsive Footer */
+@media (max-width: 768px) {
+  .footer-container {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .footer-about,
+  .footer-links,
+  .footer-contact,
+  .footer-social {
+      margin-bottom: 100px;
+  }
 }
